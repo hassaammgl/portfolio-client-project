@@ -1,0 +1,18 @@
+$lgreen: #13e845;
+$dgreen: #3d6947;
+$dbrown: #69433d;
+$red: #e83213;
+$lbrown: #82493e;
+
+@mixin flexer($dir: row, $justify: center, $items: center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $items;
+  flex-direction: $dir;
+}
+
+@mixin hw($width: 100%, $height: fit-content) {
+  height: $height;
+  width: $width;
+}
+
