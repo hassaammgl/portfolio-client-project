@@ -1,13 +1,15 @@
 import React from 'react'
-import {BiMenuAltRight} from "react-icons/bi";
 import Image from 'next/image';
 import style from "@/styles/header.module.scss";
 import img from "@/public/nav.png"
+import Hamburger from './Hamburger';
+
+
 function Header() {
   return (
     <div className={style.header}>
       <Image src={img} alt='' />
-      <BiMenuAltRight className={style.icon} />
+      <Hamburger />
     </div>
   )
 }

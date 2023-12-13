@@ -1,20 +1,19 @@
-@import "./utils.scss";
-@import "./App.scss";
+@import "./utils";
 
-.header{
-    width: 95%;
-    height: 12vh;
-    padding: 0 2rem;
-    background: $lgreen;
-    @include flexer(center,space-between);
+.header {
+  width: 100vw;
+  height: fit-content;
+  // padding: 0 1rem;
+  background: $lgreen;
+  @include flexer(center, space-between);
 
-    img{
-        height: 8vh;
-        width: 4.5%;
-    }
+  img {
+    height: 8vh;
+    width: 4.5%;
+  }
 
-    .icon{
-        font-size: 4rem;
-        cursor: pointer;
-    }
+  .icon {
+    font-size: 4rem;
+    cursor: pointer;
+  }
 }

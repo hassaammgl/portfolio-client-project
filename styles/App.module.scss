@@ -1,0 +1,24 @@
+.body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+@font-face {
+  font-family: font;
+  src: url(../public/f.ttf);
+}
+@font-face {
+  font-family: font2;
+  src: url(../public/f1.ttf);
+}
+@font-face {
+  font-family: font3;
+  src: url(../public/f2.ttf);
+}
+@font-face {
+  font-family: font4;
+  src: url(../public/f3.ttf);
+}
