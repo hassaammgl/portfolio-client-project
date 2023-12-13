@@ -22,7 +22,7 @@
 
   .tech {
     background: #0c8c34;
-    height: 15vh;
+    height: 20vh;
     display: flex;
     width: 50%;
     border-radius: 10px;
@@ -42,16 +42,14 @@
       .techno {
         margin: 7px;
         background: $bg;
-    //     width: 35%;
-    //     height: 7vh;
-    //     align-items: center;
-    //     justify-content: center;
-    //     text-align: center;
-    //     display: flex;
-    //     gap: 1rem;
-    //     font-size: 1.5rem;
-    //     color: white;
-    //     border-radius: 10px;
+        width: 30%;
+        height: 8vh;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        font-size: 1.3rem;
+        justify-content: space-around;
+        border-radius: 10px;
       }
 
       .icons {
