@@ -1,0 +1,11 @@
+@mixin flexer($dir: row, $justify: center, $items: center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $items;
+  flex-direction: $dir;
+}
+
+@mixin hw($width: 100%, $height: fit-content) {
+  height: $height;
+  width: $width;
+}
