@@ -10,9 +10,17 @@ const Company = () => {
             <div className={style.btn}>
                 <button>Company</button>
             </div>
-        <div className={style.robot}>
-        <Image src={robots} alt="" />
-        </div>
+            <div className={style.robot}>
+                <Image src={robots} alt="" />
+                <div className={style.text}>
+                    <div className={style.top}>
+                        <p>Publisher: <span>Monster Programming</span></p>
+                    </div>
+                    <div className={style.bottom}>
+                        <h4>An Intro to Algorithms and Data Structures (Javascript Edition)</h4>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }

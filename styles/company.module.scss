@@ -22,10 +22,22 @@
   }
 
   .robot{
+    position: relative;
     img{
         height: 70vh;
         border-radius: 10px;
         width: 28vw;
+    }
+
+    .text{
+        position: absolute;
+        color: white;
+        top: 0;
+        display: flex;
+        height: 60vh;
+        padding: .5rem;
+        flex-direction: column;
+        justify-content: space-between;
     }
   }
 }
