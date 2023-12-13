@@ -2,6 +2,7 @@
 import style from "@/styles/company.module.scss";
 import React from 'react'
 import Image from "next/image";
+import { FaArrowRightLong } from "react-icons/fa6";
 import robots from "@/public/rename.jpeg"
 
 const Company = () => {
@@ -18,6 +19,7 @@ const Company = () => {
                     </div>
                     <div className={style.bottom}>
                         <h4>An Intro to Algorithms and Data Structures (Javascript Edition)</h4>
+                        <p>Dec 13,2023 <FaArrowRightLong className={style.icon} /> </p>
                     </div>
                 </div>
             </div>

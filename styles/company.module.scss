@@ -34,10 +34,44 @@
         color: white;
         top: 0;
         display: flex;
-        height: 60vh;
+        height: 70vh;
         padding: .5rem;
         flex-direction: column;
         justify-content: space-between;
+        font-family: font;
+        background: (0deg,#10e956,hsla(0,0%,100%,.005)93%);
+
+        .top{
+            font-size: 1.5rem;
+            background: #00000080;
+            width: 70%;
+            text-align: center;
+            border-radius: 50px;
+
+            span{
+                color: $lgreen;
+            }
+        }
+
+        .bottom{
+            // background: red;
+            h4{
+                font-size: 2.2rem;
+                letter-spacing: 2px;
+            }
+            p{
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                text-align: center;
+                align-items: center;
+                font-size: 1.2rem;
+
+                .icon{
+                    font-size: 2rem;
+                }
+            }
+        }
     }
   }
 }
