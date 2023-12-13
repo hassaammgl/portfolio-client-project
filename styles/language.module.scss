@@ -1,22 +1,57 @@
 @import "./utils";
 
-.technology{
-    height: 60vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    background: darkgrey;
+.technology {
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background: rgb(26, 26, 26);
 
-    button{
+  button {
+    background: $bg;
+    color: $lgreen;
+    font-size: 2rem;
+    padding: 1.2rem 2rem;
+    border: 3px solid $dgreen;
+    font-family: font;
+    letter-spacing: 1px;
+    border-radius: 10px;
+  }
+
+  .tech {
+    background: $dgreen;
+    height: 20vh;
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 2rem;
+
+    .tec {
+      display: flex;
+      color: white;
+      height: 8vh;
+      gap: 2rem;
+      width: 80%;
+
+      .techno {
         background: $bg;
-        color: $lgreen;
-        font-size: 2rem;
-        padding: 1.2rem 2rem;
-        border: 3px solid $dgreen;
-        font-family: font;
-        letter-spacing: 1px;
-        border-radius: 10px;
+        width: 30vw;
+        height: 8vh;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        gap: 2rem;
+      }
+
+      .icons {
+        color: $dgreen;
+      }
     }
+  }
 }
