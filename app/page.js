@@ -4,6 +4,7 @@ import img from "@/public/home.png";
 import { FaHandPeace } from "react-icons/fa";
 import style from "@/styles/home.module.scss";
 import Languages from "@/components/Languages";
+import Company from "@/components/Company";
 
 export default function page() {
   return (
@@ -33,6 +34,7 @@ export default function page() {
         </div>
       </div>
       <Languages/>
+      <Company />
     </>
   );
 }
