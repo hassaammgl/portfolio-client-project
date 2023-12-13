@@ -8,6 +8,8 @@ const Company = () => {
             <div className={style.btn}>
                 <button>Company</button>
             </div>
+
+            
         </div>
     )
 }
