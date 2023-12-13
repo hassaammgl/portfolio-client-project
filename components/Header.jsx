@@ -8,8 +8,10 @@ import Hamburger from './Hamburger';
 function Header() {
   return (
     <div className={style.header}>
-      <Image src={img} alt='' />
-      <Hamburger />
+      <div className={style.innermenu}>
+        <Image className={style.img} src={img} alt='' />
+        <Hamburger />
+      </div>
     </div>
   )
 }

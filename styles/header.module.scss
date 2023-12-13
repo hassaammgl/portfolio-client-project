@@ -3,17 +3,18 @@
 .header {
   width: 100vw;
   height: fit-content;
-  // padding: 0 1rem;
   background: $lgreen;
-  @include flexer(center, space-between);
-
-  img {
-    height: 8vh;
-    width: 4.5%;
+  display: flex;
+  
+  .innermenu{
+    padding: 1rem 3rem;
+    width: 100%;
+      display: flex;
+      justify-content: space-between;
+    align-items: center;
   }
-
-  .icon {
-    font-size: 4rem;
-    cursor: pointer;
+  .img{
+    height: 70px;
+    width: 70px;
   }
 }

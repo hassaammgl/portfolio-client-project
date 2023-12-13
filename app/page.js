@@ -1,5 +1,8 @@
 import Header from "@/components/Header";
+import Image from "next/image";
+import img from "@/public/home.png";
 import { FaHandPeace } from "react-icons/fa";
+import style from "@/styles/home.module.scss";
 
 export default function page() {
   return (
@@ -18,13 +21,14 @@ export default function page() {
             </h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo enim
-              nobis ad laboriosam consectetur, sit architecto corporis nostrum.
-              Iusto fugiat dolorem reprehenderit veritatis incidunt aliquid.
+              nobis ad laboriosam  sit architecto corporis nostrum.
+              Iusto fugiat dolorem reprehenderit veritatis  aliquid.
               Recusandae provident consequatur totam repellendus fugiat magnam,
-              rem sed pariatur excepturi animi omnis ipsa quam consectetur
-              cumque! Illum aliquam optio dolorum, odit id dicta blanditiis!
             </p>
           </div>
+        </div>
+        <div className={style.right}>
+          <Image src={img} alt="" />
         </div>
       </div>
     </>

@@ -1,1 +1,59 @@
 @import "./utils";
+@import "./App.module.scss";
+
+.home {
+  display: flex;
+  background: #000;
+  height: 100vh;
+  flex-direction: row;
+  width: 100vw;
+}
+
+.left {
+  color: white;
+  width: 55%;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+  @include flexer(column);
+}
+
+.box {
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: rgba(0, 128, 0, 0.5);
+  color: rgb(15, 201, 15);
+  font-family: font;
+  display: flex;
+  padding: 1.2rem 1.6rem;
+  align-items: center;
+  width: 25rem;
+  letter-spacing: 2px;
+  border-radius: 10px;
+  font-size: 25px;
+
+  .hand{
+    padding-right: .5rem;
+    color: burlywood;
+  }
+}
+
+.heading{
+    h1{
+        font-size: 4rem;
+        font-family: font;
+        span{
+            color: $lgreen;
+        }
+    }
+    p{
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+        color: rgb(231, 231, 231);
+        font-family: $fonts;
+    }
+}
+
+.right {
+  width: 45%;
+}
