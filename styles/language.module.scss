@@ -2,7 +2,7 @@
 
 .technology {
   height: 60vh;
-  width: 100%;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -13,6 +13,7 @@
     background: $bg;
     color: $lgreen;
     font-size: 2rem;
+    text-align: center;
     padding: 1.2rem 2rem;
     border: 3px solid $dgreen;
     font-family: font;
@@ -22,15 +23,15 @@
 
   .tech {
     background: #0c8c34;
-    height: 20vh;
+    height: 25vh;
     display: flex;
-    width: 50%;
+    width: 60vw;
     border-radius: 10px;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     padding: 1rem;
-    gap: 2rem;
+    gap: 1rem;
 
     .tec {
       display: flex;
@@ -42,20 +43,36 @@
       .techno {
         margin: 7px;
         background: $bg;
-        width: 30%;
+        width: 30vw;
         height: 8vh;
         text-align: center;
         align-items: center;
         display: flex;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         justify-content: space-around;
         border-radius: 10px;
       }
 
       .icons {
-        font-size: 2rem;
+        font-size: 1.8rem;
         color: #0c8c34;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 1224px) {
+  .technology {
+    .tech {
+      width: 70vw;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .technology {
+    .tech {
+      width: 80vw;
     }
   }
 }
