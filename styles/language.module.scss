@@ -1,7 +1,7 @@
 @import "./utils";
 
 .technology {
-  height: 60vh;
+  height: 50vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -42,13 +42,14 @@
 
       .techno {
         margin: 7px;
+        font-family: font;
         background: $bg;
         width: 30vw;
         height: 8vh;
         text-align: center;
         align-items: center;
         display: flex;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         justify-content: space-around;
         border-radius: 10px;
       }
