@@ -1,6 +1,20 @@
 @import "./utils";
 
 .technology{
-    height: 80vh;
+    height: 60vh;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: darkgrey;
+
+    button{
+        background: $bg;
+        color: $lgreen;
+        font-size: 2rem;
+        padding: 1.2rem 2rem;
+        border: 3px solid $dgreen;
+        border-radius: 10px;
+    }
 }

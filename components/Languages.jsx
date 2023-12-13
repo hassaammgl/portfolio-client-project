@@ -10,7 +10,9 @@ import style from "@/styles/language.module.scss";
 const Languages = () => {
   return (
     <div className={style.technology}>
-      <h2>TECHNOLOGIES</h2>
+        <div className={style.btn}>
+        <button>TECHNOLOGIES</button>
+        </div>
       <div className={style.tech}>
         <div className={style.techno}>
             <FaReact />
