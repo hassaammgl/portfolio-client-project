@@ -3,6 +3,7 @@ import Image from "next/image";
 import img from "@/public/home.png";
 import { FaHandPeace } from "react-icons/fa";
 import style from "@/styles/home.module.scss";
+import Languages from "@/components/Languages";
 
 export default function page() {
   return (
@@ -31,6 +32,7 @@ export default function page() {
           <Image src={img} alt="" />
         </div>
       </div>
+      <Languages/>
     </>
   );
 }
