@@ -1,3 +1,9 @@
+$lgreen: #13e845;
+$dgreen: #3d6947;
+$dbrown: #69433d;
+$red: #e83213;
+$lbrown: #82493e;
+
 @mixin flexer($dir: row, $justify: center, $items: center) {
   display: flex;
   justify-content: $justify;
@@ -8,4 +14,21 @@
 @mixin hw($width: 100%, $height: fit-content) {
   height: $height;
   width: $width;
+}
+
+@font-face {
+  font-family: font;
+  src: url(../public/f.ttf);
+}
+@font-face {
+  font-family: font2;
+  src: url(../public/f1.ttf);
+}
+@font-face {
+  font-family: font3;
+  src: url(../public/f2.ttf);
+}
+@font-face {
+  font-family: font4;
+  src: url(../public/f3.ttf);
 }

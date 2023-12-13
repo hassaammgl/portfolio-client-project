@@ -1,0 +1,34 @@
+@import "./utils.scss";
+
+.home {
+    background: gray;
+    font-family: font;
+    height: 88vh;
+    width: 50%;
+    @include flexer(row);
+
+  .left {
+    @include flexer(column);
+
+    .hand{
+        color: $lbrown;
+        padding-right: .8rem;
+        font-size: 2rem;
+    }
+    .box{
+        width: 55%;
+        background: #14e956;
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    .heading{
+        color: white;
+        font-size: 2rem;
+
+        span{
+            color: $lgreen;
+        }
+    }
+  }
+}
