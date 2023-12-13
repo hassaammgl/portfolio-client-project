@@ -21,10 +21,11 @@
   }
 
   .tech {
-    background: $dgreen;
-    height: 20vh;
+    background: #0c8c34;
+    height: 15vh;
     display: flex;
-    width: 60%;
+    width: 50%;
+    border-radius: 10px;
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -35,22 +36,27 @@
       display: flex;
       color: white;
       height: 8vh;
-      gap: 2rem;
-      width: 80%;
+      justify-content: center;
+      width: 100%;
 
       .techno {
+        margin: 7px;
         background: $bg;
-        width: 30vw;
-        height: 8vh;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        display: flex;
-        gap: 2rem;
+    //     width: 35%;
+    //     height: 7vh;
+    //     align-items: center;
+    //     justify-content: center;
+    //     text-align: center;
+    //     display: flex;
+    //     gap: 1rem;
+    //     font-size: 1.5rem;
+    //     color: white;
+    //     border-radius: 10px;
       }
 
       .icons {
-        color: $dgreen;
+        font-size: 2rem;
+        color: #0c8c34;
       }
     }
   }
