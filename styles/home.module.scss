@@ -3,15 +3,33 @@
 
 .home {
   display: flex;
+  overflow: hidden;
   background: #000;
-  height: 100vh;
+  height: 90vh;
   flex-direction: row;
-  width: 100vw;
+  width: 100%;
+
+  @media screen and (max-width:1024px) {
+    flex-direction: column;
+    height: fit-content;
+    text-align: center;
+    width: fit-content;
+    .left{
+        margin-top: 2rem;
+        width: 95%;
+    }
+    .right{
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            justify-content: center;
+    }
+  }
 }
 
 .left {
   color: white;
-  width: 55vw;
+  width: 55%;
   align-items: center;
   justify-content: center;
   padding: 0 2rem;
@@ -49,8 +67,8 @@
     p{
         font-size: 1.2rem;
         letter-spacing: 2px;
-        color: rgb(231, 231, 231);
         font-family: $fonts;
+        color: $grey;
     }
 }
 
