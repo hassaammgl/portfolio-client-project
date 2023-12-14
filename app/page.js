@@ -5,6 +5,7 @@ import { FaHandPeace } from "react-icons/fa";
 import style from "@/styles/home.module.scss";
 import Languages from "@/components/Languages";
 import Company from "@/components/Company";
+import Quote from "@/components/Quote";
 
 export default function page() {
   return (
@@ -35,6 +36,7 @@ export default function page() {
       </div>
       <Languages/>
       <Company />
+      <Quote />
     </>
   );
 }
