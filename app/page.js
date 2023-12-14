@@ -19,22 +19,22 @@ export default function page() {
           </div>
           <div className={style.heading}>
             <h1>
-              A <span>Frontend Engineer.</span>I Help Startups{" "}
-              <span>Launch</span>And <span>Grow</span> Their Products
+              A <span>Frontend Engineer.</span> I Help Startups{" "}
+              <span>Launch</span> And <span>Grow</span> Their Products.
             </h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo enim
-              nobis ad laboriosam  sit architecto corporis nostrum.
-              Iusto fugiat dolorem reprehenderit veritatis  aliquid.
-              Recusandae provident consequatur totam repellendus fugiat magnam,
+              nobis ad laboriosam sit architecto corporis nostrum. Iusto fugiat
+              dolorem reprehenderit veritatis aliquid. Recusandae provident
+              consequatur totam repellendus fugiat magnam,
             </p>
           </div>
         </div>
-        <div className={style.right}>
+        <div variants={""} className={style.right}>
           <Image src={img} alt="" />
         </div>
       </div>
-      <Languages/>
+      <Languages />
       <Company />
       <Quote />
     </>

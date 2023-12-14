@@ -21,3 +21,30 @@ $fonts: "Exo 2", sans-serif;
   height: $height;
   width: $width;
 }
+
+@mixin slideRight($duration) {
+  -webkit-animation: slide-right $duration cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: slide-right $duration cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+
+  @-webkit-keyframes slide-right {
+    0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(100px);
+      transform: translateX(100px);
+    }
+  }
+  @keyframes slide-right {
+    0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(100px);
+      transform: translateX(100px);
+    }
+  }
+}

@@ -9,20 +9,20 @@
   flex-direction: row;
   width: 100%;
 
-  @media screen and (max-width:1024px) {
+  @media screen and (max-width: 1024px) {
     flex-direction: column;
     height: fit-content;
     text-align: center;
     width: fit-content;
-    .left{
-        margin-top: 2rem;
-        width: 95%;
+    .left {
+      margin-top: 2rem;
+      width: 95%;
     }
-    .right{
-            width: 100%;
-            height: fit-content;
-            display: flex;
-            justify-content: center;
+    .right {
+      width: 100%;
+      height: fit-content;
+      display: flex;
+      justify-content: center;
     }
   }
 }
@@ -30,10 +30,9 @@
 .left {
   color: white;
   width: 55%;
-  align-items: center;
-  justify-content: center;
+  @include slideRight(2.4s);
   padding: 0 2rem;
-  @include flexer(column);
+  @include flexer(column, center, flex-start);
 }
 
 .box {
@@ -50,26 +49,26 @@
   border-radius: 10px;
   font-size: 25px;
 
-  .hand{
-    padding-right: .5rem;
+  .hand {
+    padding-right: 0.5rem;
     color: burlywood;
   }
 }
 
-.heading{
-    h1{
-        font-size: 4rem;
-        font-family: font;
-        span{
-            color: $lgreen;
-        }
+.heading {
+  h1 {
+    font-size: 4rem;
+    font-family: font;
+    span {
+      color: $lgreen;
     }
-    p{
-        font-size: 1.2rem;
-        letter-spacing: 2px;
-        font-family: $fonts;
-        color: $grey;
-    }
+  }
+  p {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    font-family: $fonts;
+    color: $grey;
+  }
 }
 
 .right {
