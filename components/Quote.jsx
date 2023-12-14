@@ -2,16 +2,18 @@
 import style from "@/styles/quote.module.scss";
 import React from 'react'
 import Image from "next/image";
+// import { FaQuoteLeft } from "react-icons/fa";
+// import { FaQuoteRight } from "react-icons/fa";
 import bg from "@/public/bg.jpg"
 
 const Quote = () => {
   return (
     <div className={style.quote}>
       <div className={style.box}>
-          <Image src={bg} alt="" />
-          <div className={style.text}>
-        <p>There&apos;s No Nobility In Playing <br /> Small.Be Different</p>
-          </div>
+        <Image src={bg} alt="" />
+        <div className={style.text}>
+          <p>There&apos;s No Nobility In Playing <br /> Small.Be Different</p>
+        </div>
       </div>
     </div>
   )
