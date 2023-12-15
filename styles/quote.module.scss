@@ -62,3 +62,41 @@
     }
   }
 }
+
+@media screen and (max-width: 375px) {
+  .quote {
+    .box {
+      width: 80%;
+      padding: 0rem 0.7rem;
+      text-align: center;
+      font-size: 2rem;
+      .iconleft {
+        right: 125px;
+        top: 14px;
+      }
+      .iconright {
+        top: -5px;
+        left: 125px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .quote {
+    .box {
+      width: 80%;
+      padding: 0rem 0.7rem;
+      text-align: center;
+      font-size: 2rem;
+      .iconleft {
+        right: 110px;
+        top: 14px;
+      }
+      .iconright {
+        top: -5px;
+        left: 110px;
+      }
+    }
+  }
+}

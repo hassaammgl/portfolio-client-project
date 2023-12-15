@@ -83,6 +83,54 @@
   }
 }
 
+@media screen and (max-width: 425px) {
+  .company {
+    h2 {
+      font-size: 2rem;
+    }
+    .robot {
+      width: 20rem;
+      height: 30rem;
+
+      .text {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        top: -100%;
+
+        .top {
+          font-size: 1rem;
+          margin-bottom: 15rem;
+        }
+
+        .bottom {
+          font-size: 1.5rem;
+          p {
+            padding-right: 0.5rem;
+            .icon {
+              font-size: x-large;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .company {
+    .robot {
+      width: 18rem;
+      .text {
+        .top {
+          margin-top: 1rem;
+          margin-bottom: 16rem;
+        }
+      }
+    }
+  }
+}
+
 @-webkit-keyframes slide-right {
   0% {
     -webkit-transform: translateX(-10);

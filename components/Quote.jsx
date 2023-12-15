@@ -16,6 +16,6 @@ const Quote = () => {
       </div>
     </div>
   );
-};
+}; 
 
 export default Quote;
