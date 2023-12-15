@@ -7,7 +7,7 @@ import { DiMongodb } from "react-icons/di";
 import { FaNodeJs, FaAngular } from "react-icons/fa";
 import style from "@/styles/language.module.scss";
 
-const Languages = () => {
+const Languages = () => { 
     return (
         <div className={style.technology}>
             <h2>TECHNOLOGIES</h2>

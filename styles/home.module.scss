@@ -8,26 +8,79 @@
   background: #000;
   height: 90vh;
   flex-direction: row;
-  width: 100%;
+  width: 100vw;
 
   @media screen and (max-width: 1024px) {
     flex-direction: column;
     height: fit-content;
     text-align: center;
-    width: fit-content;
+    width: 100%;
 
     .left {
-      margin-top: 2rem;
+      margin-top: 4rem;
       justify-content: center;
       align-items: center;
+      padding: 2rem;
       width: 95%;
     }
 
     .right {
-      width: 100%;
+      width: 95%;
       height: fit-content;
       display: flex;
       justify-content: center;
+      align-items: center;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    align-items: center;
+    .left {
+      margin-top: 4rem;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      width: 80%;
+    }
+
+    .right {
+      width: 80%;
+      height: fit-content;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    align-items: center;
+    .left {
+      width: 90%;
+      .box {
+        padding: 1rem 1.2rem;
+        align-items: center;
+        width: 20rem;
+        letter-spacing: 2px;
+        border-radius: 10px;
+        font-size: 18px;
+      }
+      .heading {
+        h1 {
+          font-size: 2.5rem;
+        }
+
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .right {
+      width: 90%;
+
+      img {
+        width: 80%;
+        height: 80%;
+      }
     }
   }
 }

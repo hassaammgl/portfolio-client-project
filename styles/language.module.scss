@@ -52,18 +52,30 @@
   }
 }
 
-// @media screen and (max-width: 1224px) {
-//   .technology {
-//     .tech {
-//       width: 70vw;
-//     }
-//   }
-// }
-
-// @media screen and (max-width: 1024px) {
-//   .technology {
-//     .tech {
-//       width: 80vw;
-//     }
-//   }
-// }
+@media screen and (max-width:1024px) {
+  .technology {
+    .tech {
+      padding: 1.5rem;
+      @include flexer(row, center);
+      width: 60vw;
+      gap: 1.4rem;
+      flex-wrap: wrap;
+  
+      > div {
+        background: $bg;
+        padding: 0.7rem 1rem;
+        gap: 5px;
+        border-radius: 10px;
+        width: 7rem;
+        font-size: larger;
+        @include flexer(row, space-between, center);
+  
+        .icons {
+          color: $lgreen;
+          text-align: center;
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}

@@ -32,3 +32,33 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .quote {
+    .box {
+      padding: 0rem 4rem;
+      .iconleft {
+        right: 30px;
+      }
+      .iconright {
+        left: 530px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .quote {
+    .box {
+      width: 70%;
+      padding: 0rem 1rem;
+      font-size: 3rem;
+      .iconleft {
+        right: 0px;
+      }
+      .iconright {
+        left: 250px;
+      }
+    }
+  }
+}

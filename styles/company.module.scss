@@ -9,7 +9,7 @@
   align-items: center;
   background: rgba(0, 0, 0, 0);
 
-  button {
+  h2 {
     background: $bg;
     color: $lgreen;
     font-size: 2.5rem;
@@ -22,32 +22,37 @@
   }
 
   .robot {
-    position: relative;
-    img {
-      height: 70vh;
-      border-radius: 10px;
-      width: 28vw;
-    }
+    width: 27rem;
+    height: 35rem;
+    overflow: hidden;
+    background: linear-gradient(0deg, #10e956, hsla(0, 0%, 100%, 0.005) 43%);
+    border-radius: 15px;
 
-    .text {
-      position: absolute;
-      color: white;
+    img {
+      position: relative;
+      z-index: -1;
       top: 0;
-      background: linear-gradient(0deg, #10e956, hsla(0, 0%, 100%, 0.005) 35%);
-      border-bottom-left-radius: 10px;
-      border-bottom-right-radius: 10px;
-      display: flex;
-      height: 70vh;
-      padding: 0.5rem;
-      flex-direction: column;
-      justify-content: space-between;
-      font-family: font;
+      left: 0;
+      height: 100%;
+      width: 100%;
+    }
+    .text {
+      height: 100%;
+      width: 100%;
+      position: relative;
+      top: -100%;
 
       .top {
-        font-size: 1.2rem;
-        background: #00000080;
-        width: 60%;
-        text-align: center;
+        background: #00000075;
+        width: fit-content;
+        font-weight: bolder;
+        font-size: 1.5rem;
+        font-family: font;
+        color: white;
+        margin-left: 1rem;
+        margin-bottom: 16rem;
+        margin-top: 1.7rem;
+        padding: 1px 30px;
         border-radius: 50px;
 
         span {
@@ -56,24 +61,45 @@
       }
 
       .bottom {
+        height: 40%;
+        color: white;
+        font-size: 2rem;
+        font-family: font;
+        padding: 0.82rem;
         h4 {
-          font-size: 2.2rem;
-          letter-spacing: 2px;
+          margin-bottom: 0;
         }
         p {
-          display: flex;
-          justify-content: space-between;
-          width: 100%;
-          text-align: center;
-          align-items: center;
-          font-size: 1.2rem;
-
+          font-size: large;
+          @include flexer(row, space-between);
           .icon {
-            font-size: 2rem;
-            cursor: pointer;
+            -webkit-animation: slide-right 0.6s ease-in infinite alternate both;
+            animation: slide-right 0.6s ease-in infinite alternate both;
+            font-size: xx-large;
           }
         }
       }
     }
+  }
+}
+
+@-webkit-keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(-10);
+    transform: translateX(-10);
+  }
+  100% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+}
+@keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(-10);
+    transform: translateX(-10);
+  }
+  100% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
   }
 }
