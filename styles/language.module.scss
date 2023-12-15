@@ -30,7 +30,7 @@
     font-family: font;
     letter-spacing: 2px;
     color: white;
-    @include flexer(row, flex-start);
+    @include flexer(row, center);
     width: 50vw;
     gap: 1.8rem;
     flex-wrap: wrap;
