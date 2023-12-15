@@ -8,7 +8,12 @@ import img from "@/public/nav.png";
 import { Fade as HamburgerIcon } from "hamburger-react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { FaGithub, FaTelegram, FaLinkedin } from "react-icons/fa";
+import {
+  FaGithub,
+  FaTelegram,
+  FaLinkedin,
+  FaHandPointRight,
+} from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 
 function Header() {
@@ -46,18 +51,32 @@ const Menu = ({ menuOptions }) => {
           />
         </div>
         <div className={style2.pages}>
-          <Link href={"/"}>Home</Link>
-          <Link href={"/Projects"}>Projects</Link>
-          <Link href={"/"}>Resume</Link>
-          <Link href={"/"}>Personal Info</Link>
-          <Link href={"/"}>Background</Link>
+          <Link href={"/"}>
+            <FaHandPointRight className={style2.activeicon} />
+            Home{" "}
+          </Link>
+          <Link href={"/Projects"}>
+            <FaHandPointRight className={style2.activeicon} />
+            Projects{" "}
+          </Link>
+          <Link href={"/"}>
+            <FaHandPointRight className={style2.activeicon} />
+            Resume{" "}
+          </Link>
+          <Link href={"/"}>
+            <FaHandPointRight className={style2.activeicon} />
+            Personal Info{" "}
+          </Link>
+          <Link href={"/"}>
+            <FaHandPointRight className={style2.activeicon} />
+            Background{" "}
+          </Link>
         </div>
       </div>
       <div className={style2.socials}>
         <motion.Link
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
-          
           className={style2.social}
           href={"/"}
         >
@@ -67,10 +86,9 @@ const Menu = ({ menuOptions }) => {
         <motion.Link
           initial={{ scale: 0 }} // Initial scale set to 0
           animate={{ scale: 1 }}
-          
           className={style2.social}
           href={"/"}
-          >
+        >
           <span>Linkedin</span>
           <FaLinkedin className={style2.icon} />
         </motion.Link>
@@ -78,17 +96,15 @@ const Menu = ({ menuOptions }) => {
         <motion.Link
           initial={{ scale: 0 }} // Initial scale set to 0
           animate={{ scale: 1 }}
-          
           className={style2.social}
           href={"/"}
-          >
+        >
           <span>Twitter</span>
           <BsTwitterX className={style2.icon} />
         </motion.Link>
         <motion.Link
           initial={{ scale: 0 }} // Initial scale set to 0
           animate={{ scale: 1 }}
-          
           className={style2.social}
           href={"/"}
         >

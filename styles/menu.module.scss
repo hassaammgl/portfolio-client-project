@@ -32,9 +32,23 @@
       text-decoration: none;
       margin: 2rem;
       color: $lgreen;
+      display: flex;
       font-size: 4rem;
       font-family: font;
+      transition: all ease 0.3s;
+      &:hover .activeicon {
+        transition: all ease 0.3s;
+        opacity: 1;
+      }
+      &:visited .activeicon {
+        transition: all ease 0.3s;
+        opacity: 1;
+      }
     }
+  }
+  .activeicon {
+    opacity: 0;
+    margin-right: 3rem;
   }
 }
 
