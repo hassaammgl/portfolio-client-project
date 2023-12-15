@@ -18,3 +18,19 @@
     width: 70px;
   }
 }
+
+@media screen and (max-width: 425px) {
+  .header {
+    .innermenu {
+      padding: 1rem;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .img {
+      height: 50px;
+      width: 50px;
+    }
+  }
+}
