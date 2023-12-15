@@ -6,11 +6,14 @@ import style from "@/styles/home.module.scss";
 import Languages from "@/components/Languages";
 import Company from "@/components/Company";
 import Quote from "@/components/Quote";
+import BgVideo from "@/components/BgVideo";
+import Footer from "@/components/Footer";
 
 export default function page() {
   return (
     <>
       <Header />
+      {/* <BgVideo /> */}
       <div className={style.home}>
         <div className={style.left}>
           <div className={style.box}>
@@ -18,7 +21,7 @@ export default function page() {
             Hi There! I&apos;m Monster Programming
           </div>
           <div className={style.heading}>
-            <h1> 
+            <h1>
               A <span>Frontend Engineer.</span> I Help Startups{" "}
               <span>Launch</span> And <span>Grow</span> Their Products.
             </h1>
@@ -37,6 +40,7 @@ export default function page() {
       <Languages />
       <Company />
       <Quote />
+      <Footer />
     </>
   );
 }
