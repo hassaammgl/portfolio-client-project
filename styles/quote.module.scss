@@ -4,8 +4,11 @@
   height: 90vh;
   width: 100vw;
   @include flexer(center);
-  background: $bg;
-
+  background: rgba(0, 0, 0, 0.664);
+  box-shadow: rgba(0, 0, 0, 0.932) 0px 22px 70px 4px;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
   .box {
     border: 3px solid $lgreen;
     border-radius: 20px;

@@ -13,7 +13,7 @@ export default function page() {
   return (
     <>
       <Header />
-      {/* <BgVideo /> */}
+      <BgVideo />
       <div className={style.home}>
         <div className={style.left}>
           <div className={style.box}>
@@ -33,7 +33,7 @@ export default function page() {
             </p>
           </div>
         </div>
-        <div variants={""} className={style.right}>
+        <div className={style.right}>
           <Image src={img} alt="" />
         </div>
       </div>

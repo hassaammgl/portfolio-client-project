@@ -1,10 +1,9 @@
 import React from 'react'
-import { FaGithub, FaTelegram, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaTelegram, FaLinkedin, FaHeart } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 import style from "@/styles/footer.module.scss";
 import Link from 'next/link';
 import { MdAttachEmail } from "react-icons/md";
-import { FaKissWinkHeart } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -34,7 +33,9 @@ const Footer = () => {
       </div>
       <div className={style.mainfooter}>
         <p>Built From Scratch with
-          <FaKissWinkHeart />{" "}
+          <span>
+            <FaHeart className={style.hearticon} />{" "}
+          </span>
           &copy; Copyright 2023. Monster Programming. All Rights Reserved.
         </p>
       </div>
