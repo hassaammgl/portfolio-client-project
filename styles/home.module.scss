@@ -4,8 +4,7 @@
 .home {
   display: flex;
   overflow: hidden;
-  // background: #0000003d;
-  background: #000;
+  background: #0000003d;
   height: 90vh;
   flex-direction: row;
   width: 100vw;
@@ -165,5 +164,13 @@
 .right {
   width: 45%;
   position: relative;
-  // @include slideLeft(2.2s);
+}
+
+.intro{
+  position:fixed;
+  height: 100vh;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100vw;
 }

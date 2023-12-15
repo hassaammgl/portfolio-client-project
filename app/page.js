@@ -11,7 +11,7 @@ export default function page() {
   return (
     <>
       <Header />
-      {/* <BgVideo /> */}
+      <BgVideo />
       <Home />
       <Languages />
       <Company />

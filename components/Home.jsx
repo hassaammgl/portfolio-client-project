@@ -1,18 +1,16 @@
 "use client";
 
-import React, { useRef } from "react";
+import React from "react";
 import Image from "next/image";
 import img from "@/public/home.png";
 import { FaHandPeace } from "react-icons/fa";
 import style from "@/styles/home.module.scss";
-import { motion, useScroll } from "framer-motion";
 
-const Home = ()  => {
+const Home = () => {
+ 
   return (
     <div className={style.home}>
-      <div
-        className={style.left}
-      >
+      <div className={style.left}>
         <div className={style.box}>
           <FaHandPeace className={style.hand} />
           Hi There! I&apos;m Monster Programming
@@ -33,9 +31,9 @@ const Home = ()  => {
       <div className={style.right}>
         <Image src={img} alt="" />
       </div>
+      
     </div>
   );
 };
 
 export default Home;
- 

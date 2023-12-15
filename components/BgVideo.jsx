@@ -1,10 +1,46 @@
+"use client"
 
-import React from 'react'
+import React, { useEffect, useState }  from "react";
 import style from "@/styles/video.module.scss";
-const BgVideo = () => {
-  return (
-    <video className={style.video} src={require('@/public/video.mp4')} autoPlay muted loop />
-  )
-}
+import style2 from "@/styles/home.module.scss";
+import front from "@/public/front.jpg";
+import Image from "next/image";
 
-export default BgVideo
+const BgVideo = () => {
+  const [isFront, setIsFront] = useState(true);
+  useEffect(() => {
+    const yourFunction = () => {
+      console.log("Function is running!");
+      const timeoutId = setTimeout(() => {
+        setIsFront(false);
+      }, 3000);
+
+      return () => clearTimeout(timeoutId);
+    };
+
+    yourFunction();
+  }, []);
+  return (
+    <>
+    <video
+      className={style.video}
+      src={require("@/public/video.mp4")}
+      autoPlay
+      muted
+      loop
+      />
+      {isFront && <DisplayImage />}
+      </>
+  );
+};
+
+
+const DisplayImage = () => {
+  return (
+    <>
+      <Image className={style2.intro} src={front} alt="" />
+    </>
+  );
+};
+
+export default BgVideo;

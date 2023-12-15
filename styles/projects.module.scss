@@ -5,7 +5,7 @@
   width: 100vw;
   background: rgba(0, 0, 0, 0.664);
   box-shadow: rgba(0, 0, 0, 0.932) 0px 22px 70px 4px;
-  margin-top: 2rem;
+  padding-top: 2rem;
   padding-bottom: 2rem;
   margin-bottom: 2rem;
   overflow: hidden;
@@ -84,12 +84,13 @@
     font-size: 1.5rem;
     padding: 1rem;
     border: 3px solid $lgreen;
-    box-shadow: 0px 5px 8px 0px $lgreen;
+    box-shadow: 5px 5px $lgreen;
   }
 
   p {
     font-family: $fonts;
     font-size: 1rem;
+    text-align: justify;
     color: white;
     text-align: start;
     font-size: 1.2rem;
@@ -108,5 +109,164 @@
     font-weight: bold;
     border: none;
     outline: none;
+  }
+}
+
+@media screen and (max-width: 2560px) and (min-width: 1681px) {
+  .projects_body {
+    padding-top: 2rem;
+
+    h1 {
+      @include flexer();
+      color: $lgreen;
+      font-family: $fonts;
+      font-size: 4rem;
+    }
+  }
+
+  .projectcontent {
+    h3 {
+      font-size: 2.5rem;
+    }
+
+    p {
+      color: white;
+      text-align: start;
+      font-size: 1.5rem;
+      span {
+        color: $lgreen;
+        font-size: 1.5rem;
+      }
+    }
+
+    button {
+      font-size: 1.5rem;
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .projectcontent {
+    h3 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      color: white;
+      text-align: start;
+      font-size: 1rem;
+      span {
+        color: $lgreen;
+        font-size: 1rem;
+      }
+    }
+
+    button {
+      font-size: 0.8rem;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .allprojects {
+    .project {
+      width: 90%;
+      margin: 5rem 0;
+      @include flexer(column, space-between);
+
+      .img1 {
+        width: 80vw;
+      }
+    }
+    .project2 {
+      width: 90%;
+      @include flexer(column, space-between);
+
+      .img2 {
+        width: 80vw;
+      }
+    }
+  }
+
+  .projectcontent {
+    width: 80vw;
+    margin-top: 2rem;
+    @include flexer(column);
+    h3 {
+      font-size: 1.2rem;
+    }
+
+    p {
+      font-size: 1rem;
+      span {
+        font-size: 1.2rem;
+      }
+    }
+
+    button {
+      font-size: 1rem;
+    }
+  }
+}
+@media screen and (max-width: 425px) {
+  .allprojects {
+    .project {
+      width: 90%;
+      margin: 5rem 0;
+      @include flexer(column, space-between);
+
+      .img1 {
+        width: 80vw;
+        height: 25vh;
+      }
+    }
+    .project2 {
+      width: 90%;
+      @include flexer(column, space-between);
+
+      .img2 {
+        width: 80vw;
+        height: 25vh;
+      }
+    }
+  }
+
+  .projectcontent {
+    width: 80vw;
+    margin-top: 2rem;
+    @include flexer(column);
+    h3 {
+      font-size: 1.2rem;
+    }
+
+    p {
+      font-size: 1rem;
+      span {
+        font-size: 1.2rem;
+      }
+    }
+
+    button {
+      font-size: 1rem;
+    }
+  }
+}
+@media screen and (max-width: 375px) {
+  .projectcontent {
+    width: 90vw;
+    margin-top: 2rem;
+    @include flexer(column);
+    h3 {
+      font-size: 1.2rem;
+    }
+
+    p {
+      font-size: 1rem;
+      span {
+        font-size: 1.2rem;
+      }
+    }
+
+    button {
+      font-size: .7rem;
+    }
   }
 }
