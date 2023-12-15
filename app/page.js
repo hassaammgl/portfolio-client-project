@@ -1,43 +1,18 @@
 import Header from "@/components/Header";
-import Image from "next/image";
-import img from "@/public/home.png";
-import { FaHandPeace } from "react-icons/fa";
-import style from "@/styles/home.module.scss";
+
 import Languages from "@/components/Languages";
 import Company from "@/components/Company";
 import Quote from "@/components/Quote";
 import BgVideo from "@/components/BgVideo";
 import Footer from "@/components/Footer";
-import { AnimatePresence, motion, useScroll } from "framer-motion";
+import Home from "@/components/Home";
 
 export default function page() {
   return (
     <>
       <Header />
       {/* <BgVideo /> */}
-      <div className={style.home}>
-        <motion.div className={style.left}>
-          <div className={style.box}>
-            <FaHandPeace className={style.hand} />
-            Hi There! I&apos;m Monster Programming
-          </div>
-          <div className={style.heading}>
-            <h1>
-              A <span>Frontend Engineer.</span> I Help Startups{" "}
-              <span>Launch</span> And <span>Grow</span> Their Products.
-            </h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo enim
-              nobis ad laboriosam sit architecto corporis nostrum. Iusto fugiat
-              dolorem reprehenderit veritatis aliquid. Recusandae provident
-              consequatur totam repellendus fugiat magnam,
-            </p>
-          </div>
-        </motion.div>
-        <motion.div className={style.right}>
-          <Image src={img} alt="" />
-        </motion.div>
-      </div>
+      <Home />
       <Languages />
       <Company />
       <Quote />

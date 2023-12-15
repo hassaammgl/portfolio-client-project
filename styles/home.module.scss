@@ -4,7 +4,8 @@
 .home {
   display: flex;
   overflow: hidden;
-  background: #0000003d;
+  // background: #0000003d;
+  background: #000;
   height: 90vh;
   flex-direction: row;
   width: 100%;
@@ -17,6 +18,8 @@
 
     .left {
       margin-top: 2rem;
+      justify-content: center;
+      align-items: center;
       width: 95%;
     }
 
@@ -33,7 +36,7 @@
   color: white;
   position: relative;
   width: 55%;
-  @include slideRight(2.6s);
+  // @include slideRight(2.6s);
   padding: 0 2rem;
   @include flexer(column, center, flex-start);
 }
@@ -79,5 +82,5 @@
 .right {
   width: 45%;
   position: relative;
-  @include slideLeft(2.2s);
+  // @include slideLeft(2.2s);
 }
