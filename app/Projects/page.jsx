@@ -8,7 +8,8 @@ import img6 from "@/public/p1.avif";
 import style from "@/styles/projects.module.scss";
 import Image from "next/image";
 import Link from "next/link";
-
+import Footer from "@/components/Footer";
+import BgVideo from "@/components/BgVideo";
 let array = [
   {
     img: img1,
@@ -64,6 +65,7 @@ export default function page() {
   return (
     <>
       <Header />
+      <BgVideo />
       <div className={style.projects_body}>
         <h1>{`{`}<span>All Projects</span>{`}`}</h1>
         <div className={style.allprojects}>
@@ -86,6 +88,7 @@ export default function page() {
           }
         </div>
       </div>
+      <Footer />
     </>
   );
 }
