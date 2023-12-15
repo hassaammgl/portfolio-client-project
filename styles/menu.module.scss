@@ -1,29 +1,51 @@
+@import "./utils";
+
 .menu {
-  position: absolute;
+  position: fixed;
+  z-index: 5;
   top: 0;
   left: 0;
-  background-color: red;
+  background-color: rgb(0, 0, 0);
   width: 100vw;
-  height: 100vh;
+  @include flexer(row-reverse);
+  height: calc(100vh);
 }
 
-.box {
-  font-size: 13rem;
-  transform: rotate(90deg);
-  animation: scaler .4s ;
-  flex-direction: column;
-  &:nth-child(2) {
-    background-color: blue;
+.links {
+  width: 50%;
+  @include flexer(column, start);
+  height: 100%;
+  .icon {
+    width: 100%;
+    background-color: $lgreen;
+    margin-right: 2rem;
+    padding: 3rem;
+    @include flexer(row, flex-end);
   }
-  @keyframes scaler {
-    0%{
-        scale:0;
+  .pages {
+    margin-right: 2rem;
+    @include flexer(column, flex-end, flex-end);
+    width: 100%;
+    a {
+      text-decoration: none;
+      margin: 2rem;
+      color: $lgreen;
+      font-size: 4rem;
+      font-family: font;
     }
-    70%{
-        scale:0.3;
-    }
-    100%{
-        scale: 1;
-    }
+  }
+}
+
+.social {
+  @include flexer(row);
+  width: 50%;
+  height: 100%;
+  .link {
+    color: white;
+    text-decoration: none;
+    border: 2px solid red;
+    text-transform: uppercase;
+    height: 10rem;
+
   }
 }

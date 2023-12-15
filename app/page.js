@@ -18,7 +18,7 @@ export default function page() {
             Hi There! I&apos;m Monster Programming
           </div>
           <div className={style.heading}>
-            <h1>
+            <h1> 
               A <span>Frontend Engineer.</span> I Help Startups{" "}
               <span>Launch</span> And <span>Grow</span> Their Products.
             </h1>

@@ -10,53 +10,48 @@ import style from "@/styles/language.module.scss";
 const Languages = () => {
     return (
         <div className={style.technology}>
-            <div className={style.btn}>
-                <button>TECHNOLOGIES</button>
-            </div>
+            <h2>TECHNOLOGIES</h2>
             <div className={style.tech}>
-                <div className={style.tec}>
-                    <div className={style.techno}>
-                        <FaReact className={style.icons} />
-                        React
-                    </div>
-                    <div className={style.techno}>
-                        <FaAngular className={style.icons} />
-                        Angular
-                    </div>
-                    <div className={style.techno}>
-                        <FaNodeJs className={style.icons} />
-                        Node
-                    </div>
-                    <div className={style.techno}>
-                        <DiMongodb className={style.icons} />
-                        MongoDB
-                    </div>
-                    <div className={style.techno}>
-                        <IoLogoJavascript className={style.icons} />
-                        Javascript
-                    </div>
+                <div>
+                    <FaReact className={style.icons} />
+
+                    <p> React</p>
                 </div>
-                <div className={style.tec}>
-                    <div className={style.techno}>
-                        <IoLogoFigma className={style.icons} />
-                        Figma
-                    </div>
-                    <div className={style.techno}>
-                        <FaSass className={style.icons} />
-                        Sass
-                    </div>
-                    <div className={style.techno}>
-                        <SiTypescript className={style.icons} />
-                        Typescript
-                    </div>
-                    <div className={style.techno}>
-                        <SiSolidity className={style.icons} />
-                        Solidity
-                    </div>
-                    <div className={style.techno}>
-                        <TbPolygon className={style.icons} />
-                        Polygon
-                    </div>
+                <div>
+                    <FaAngular className={style.icons} />
+                    <p> Angular</p>
+                </div>
+                <div>
+                    <FaNodeJs className={style.icons} />
+                    <p> Node</p>
+                </div>
+                <div>
+                    <DiMongodb className={style.icons} />
+                    <p> MongoDB</p>
+                </div>
+                <div>
+                    <IoLogoJavascript className={style.icons} />
+                    <p>   Javascript</p>
+                </div>
+                <div>
+                    <IoLogoFigma className={style.icons} />
+                    <p>  Figma</p>
+                </div>
+                <div>
+                    <FaSass className={style.icons} />
+                    <p> Sass</p>
+                </div>
+                <div>
+                    <SiTypescript className={style.icons} />
+                    <p> Typescript</p>
+                </div>
+                <div>
+                    <SiSolidity className={style.icons} />
+                    <p>  Solidity</p>
+                </div>
+                <div>
+                    <TbPolygon className={style.icons} />
+                    <p> Polygon</p>
                 </div>
             </div>
         </div>

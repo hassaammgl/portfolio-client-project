@@ -1,79 +1,66 @@
 @import "./utils";
 
 .technology {
-  height: 50vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  padding: 2rem;
   background: rgb(26, 26, 26);
-
-  button {
-    background: $bg;
-    color: $lgreen;
-    font-size: 2rem;
+  h2 {
     text-align: center;
-    padding: 1.2rem 2rem;
-    border: 3px solid $dgreen;
+    padding: 1.5rem;
+    background-color: $bg;
+    border-radius: 10px;
+    font-size: 2rem;
     font-family: font;
-    letter-spacing: 1px;
-    border-radius: 10px;
+    letter-spacing: 2px;
+    border: 3px solid $lgreen;
+    color: $lgreen;
   }
-
   .tech {
-    background: #0c8c34;
-    height: 25vh;
-    display: flex;
-    width: 60vw;
+    background-color: $lgreen;
     border-radius: 10px;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-    gap: 1rem;
+    padding: 1.5rem;
+    font-family: font;
+    letter-spacing: 2px;
+    color: white;
+    @include flexer(row, flex-start);
+    width: 50vw;
+    gap: 1.8rem;
+    flex-wrap: wrap;
 
-    .tec {
-      display: flex;
-      color: white;
-      height: 8vh;
-      justify-content: center;
-      width: 100%;
-
-      .techno {
-        margin: 7px;
-        font-family: font;
-        background: $bg;
-        width: 30vw;
-        height: 8vh;
-        text-align: center;
-        align-items: center;
-        display: flex;
-        font-size: 1.5rem;
-        justify-content: space-around;
-        border-radius: 10px;
-      }
+    > div {
+      background: $bg;
+      padding: 0.7rem 1rem;
+      gap: 5px;
+      border-radius: 10px;
+      width: 7rem;
+      font-size: larger;
+      @include flexer(row, space-between, center);
 
       .icons {
-        font-size: 1.8rem;
-        color: #0c8c34;
+        color: $lgreen;
+        text-align: center;
+        font-size: 2rem;
       }
     }
   }
 }
 
-@media screen and (max-width: 1224px) {
-  .technology {
-    .tech {
-      width: 70vw;
-    }
-  }
-}
+// @media screen and (max-width: 1224px) {
+//   .technology {
+//     .tech {
+//       width: 70vw;
+//     }
+//   }
+// }
 
-@media screen and (max-width: 1024px) {
-  .technology {
-    .tech {
-      width: 80vw;
-    }
-  }
-}
+// @media screen and (max-width: 1024px) {
+//   .technology {
+//     .tech {
+//       width: 80vw;
+//     }
+//   }
+// }

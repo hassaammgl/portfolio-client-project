@@ -1,0 +1,108 @@
+@import "./utils";
+
+.projects_body {
+  height: fit-content;
+  width: 100vw;
+  background: $bg;
+  overflow: hidden;
+
+  h1 {
+    @include flexer();
+    color: $lgreen;
+    font-family: $fonts;
+    span {
+      color: white;
+    }
+  }
+}
+
+.allprojects {
+  height: fit-content;
+  width: 100%;
+  @include flexer(column);
+
+  .project {
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 0;
+    @include flexer(row, space-between);
+
+    .img1 {
+      width: 40vw;
+      height: 40vh;
+      border-radius: 10px;
+      transform-origin: center;
+      transform-style: preserve-3d;
+      transform: perspective(1000px) rotateY(25deg) skew(4deg);
+      box-shadow: 3px 23px 30px rgba(255, 255, 255, 0.11);
+      transition: all 0.7s ease;
+      &:hover {
+        transform: perspective(1200px) rotateY(-25deg);
+      }
+    }
+  }
+  .project2 {
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 0;
+    @include flexer(row-reverse, space-between);
+
+    .img2 {
+      width: 40vw;
+      height: 40vh;
+      border-radius: 10px;
+      transform-origin: center;
+      transform-style: preserve-3d;
+      box-shadow: 3px 23px 30px rgba(255, 255, 255, 0.11);
+      transform: perspective(1200px) rotateY(-25deg);
+      transition: all 0.7s ease;
+      &:hover {
+        transform: perspective(1000px) rotateY(25deg) skew(4deg);
+      }
+    }
+  }
+}
+
+.projectcontent {
+  width: 40vw;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  h3 {
+    color: $lgreen;
+    width: fit-content;
+    text-align: center;
+    font-family: $fonts;
+    font-size: 1.5rem;
+    padding: 1rem;
+    border: 3px solid $lgreen;
+    box-shadow: 0px 5px 8px 0px $lgreen;
+  }
+
+  p {
+    font-family: $fonts;
+    font-size: 1rem;
+    color: white;
+    text-align: start;
+    font-size: 1.2rem;
+    span {
+      color: $lgreen;
+      font-size: 1.5rem;
+    }
+  }
+
+  button {
+    background: $lgreen;
+    font-family: $fonts;
+    border-radius: 5px;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    outline: none;
+  }
+}

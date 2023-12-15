@@ -14,10 +14,12 @@
     height: fit-content;
     text-align: center;
     width: fit-content;
+
     .left {
       margin-top: 2rem;
       width: 95%;
     }
+
     .right {
       width: 100%;
       height: fit-content;
@@ -29,8 +31,9 @@
 
 .left {
   color: white;
+  position: relative;
   width: 55%;
-  @include slideRight(2.4s);
+  @include slideRight(2.6s);
   padding: 0 2rem;
   @include flexer(column, center, flex-start);
 }
@@ -59,10 +62,12 @@
   h1 {
     font-size: 4rem;
     font-family: font;
+
     span {
       color: $lgreen;
     }
   }
+
   p {
     font-size: 1.2rem;
     letter-spacing: 2px;
@@ -73,4 +78,6 @@
 
 .right {
   width: 45%;
+  position: relative;
+  @include slideLeft(2.2s);
 }

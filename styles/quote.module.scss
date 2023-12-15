@@ -7,29 +7,25 @@
   background: $bg;
 
   .box {
-    position: relative;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    img {
-      height: 30vh;
-      border-radius: 10px;
-      width: 60vw;
-      border: 3px solid $lgreen;
+    border: 3px solid $lgreen;
+    border-radius: 20px;
+    color: white;
+    font-family: font;
+    padding: 0rem 8rem;
+    font-size: 3.5rem;
+    background-color: rgba(0, 0, 0, 0.158);
+
+    .iconleft {
+      position: relative;
+      top: -30px;
+      right: 90px;
+      color: $lgreen;
     }
-    p {
-      font-size: 3.5rem;
-      position: absolute;
-      color: $grey;
-      top: 0;
-      width: 60vw;
-      height: 18vh;
-      display: flex;
-      flex-direction: row;
-      font-family: font;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
+    .iconright {
+      top: 42px;
+      color: $lgreen;
+      position: relative;
+      left: 590px;
     }
   }
 }
