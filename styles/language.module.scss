@@ -2,6 +2,7 @@
 
 .technology {
   width: 100vw;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -52,7 +53,7 @@
   }
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width: 1024px) {
   .technology {
     .tech {
       padding: 1.5rem;
@@ -60,7 +61,7 @@
       width: 60vw;
       gap: 1.4rem;
       flex-wrap: wrap;
-  
+
       > div {
         background: $bg;
         padding: 0.7rem 1rem;
@@ -69,13 +70,37 @@
         width: 7rem;
         font-size: larger;
         @include flexer(row, space-between, center);
-  
+
         .icons {
           color: $lgreen;
           text-align: center;
           font-size: 2rem;
         }
       }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .technology {
+    .tech {
+      width: 65vw;
+      gap: 1.2rem;
+    }
+  }
+}
+@media screen and (max-width: 425px) {
+  .technology {
+    .tech {
+      width: 90vw;
+      gap: 0.8rem;
+    }
+  }
+}
+@media screen and (max-width: 320px) {
+  .technology {
+    .tech {
+      width: 100vw;
+      gap: 0.8rem;
     }
   }
 }
