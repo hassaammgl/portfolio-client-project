@@ -83,13 +83,43 @@
       }
     }
   }
+  @media screen and (max-width: 320px) {
+    .left {
+      justify-content: center;
+      .box {
+        padding: 1rem 1.2rem;
+        align-items: center;
+        width: 15rem;
+        letter-spacing: 0px;
+        border-radius: 10px;
+        font-size: 16px;
+      }
+      .heading {
+        h1 {
+          font-size: 2.5rem;
+        }
+
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .right {
+      width: 90%;
+
+      img {
+        width: 80%;
+        height: 80%;
+      }
+    }
+  }
 }
 
 .left {
   color: white;
   position: relative;
   width: 55%;
-  // @include slideRight(2.6s);
   padding: 0 2rem;
   @include flexer(column, center, flex-start);
 }

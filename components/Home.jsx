@@ -7,7 +7,7 @@ import { FaHandPeace } from "react-icons/fa";
 import style from "@/styles/home.module.scss";
 import { motion, useScroll } from "framer-motion";
 
-const Home = () => {
+const Home = ()  => {
   return (
     <div className={style.home}>
       <div
