@@ -65,7 +65,7 @@ export default function page() {
   return (
     <>
       <Header />
-      <BgVideo />
+      {/* <BgVideo /> */}
       <div className={style.projects_body}>
         <h1>{`{`}<span>All Projects</span>{`}`}</h1>
         <div className={style.allprojects}>

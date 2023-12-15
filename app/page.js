@@ -8,14 +8,15 @@ import Company from "@/components/Company";
 import Quote from "@/components/Quote";
 import BgVideo from "@/components/BgVideo";
 import Footer from "@/components/Footer";
+import { AnimatePresence, motion, useScroll } from "framer-motion";
 
 export default function page() {
   return (
     <>
       <Header />
-      <BgVideo />
+      {/* <BgVideo /> */}
       <div className={style.home}>
-        <div className={style.left}>
+        <motion.div className={style.left}>
           <div className={style.box}>
             <FaHandPeace className={style.hand} />
             Hi There! I&apos;m Monster Programming
@@ -32,10 +33,10 @@ export default function page() {
               consequatur totam repellendus fugiat magnam,
             </p>
           </div>
-        </div>
-        <div className={style.right}>
+        </motion.div>
+        <motion.div className={style.right}>
           <Image src={img} alt="" />
-        </div>
+        </motion.div>
       </div>
       <Languages />
       <Company />
