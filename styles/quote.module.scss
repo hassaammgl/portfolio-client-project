@@ -33,6 +33,20 @@
   }
 }
 
+@media screen and (max-width:810px) {
+  .quote{
+    .box{
+      padding: 0rem 4rem;
+      .iconleft{
+        right: 40px;
+      }
+      .iconright{
+        left: 550px;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 768px) {
   .quote {
     .box {
