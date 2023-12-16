@@ -60,9 +60,9 @@ const Menu = ({ menuOptions }) => {
             <FaHandPointRight className={style2.activeicon} />
             Projects{" "}
           </Link>
-          <Link href={""} download={true}>
+          <Link href={"./cv-template.pdf"} passHref>
             <FaHandPointRight className={style2.activeicon} />
-            Resume{" "}
+            <a download="true">Resume</a>
           </Link>
           <Link href={"/"}>
             <FaHandPointRight className={style2.activeicon} />
