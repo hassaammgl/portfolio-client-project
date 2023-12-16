@@ -61,8 +61,8 @@ const Menu = ({ menuOptions }) => {
             Projects{" "}
           </Link>
           <Link href={"./cv-template.pdf"} passHref>
-            <FaHandPointRight className={style2.activeicon} />
-            <a download="true">Resume</a>
+            <FaHandPointRight download="true" target="_blank" className={style2.activeicon} />
+             Resume
           </Link>
           <Link href={"/"}>
             <FaHandPointRight className={style2.activeicon} />
