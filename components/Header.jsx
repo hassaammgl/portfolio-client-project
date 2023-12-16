@@ -63,13 +63,13 @@ const Menu = ({ menuOptions }) => {
             <FaHandPointRight className={style2.activeicon} />
             Resume
           </Link>
-          <Link href={"/"}>
+          <Link href={"/Personal-Info"}>
             <FaHandPointRight className={style2.activeicon} />
             Personal Info{" "}
           </Link>
-          <Link href={"/"}>
+          <Link href={"/Background"}>
             <FaHandPointRight className={style2.activeicon} />
-            Background{" "}
+            Background
           </Link>
         </div>
       </div>

@@ -1,0 +1,20 @@
+@import "./utils";
+.background {
+  @include flexer();
+  height: fit-content;
+  padding: 2rem;
+  .bg {
+    background: #000000a8;
+    color: white;
+    width: 80%;
+    font-size: large;
+    font-family: font;
+    height: fit-content;
+    text-align: center;
+    font-family: $fonts;
+    font-size: 1.5rem;
+    padding: 1rem;
+    border: 3px solid $lgreen;
+    box-shadow: 15px 15px $lgreen;
+  }
+}
