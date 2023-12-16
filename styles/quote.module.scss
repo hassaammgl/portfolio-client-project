@@ -61,6 +61,15 @@
   }
 }
 
+@media screen and (max-width: 700px) and (min-width:426px) {
+  .iconleft{
+    display: none;
+  }
+  .iconright{
+    display: none;
+  }
+}
+
 @media screen and (max-width: 425px) {
   .quote {
     .box {
@@ -71,7 +80,7 @@
         right: 0px;
       }
       .iconright {
-        left: 250px;
+        left: 220px;
       }
     }
   }
@@ -89,7 +98,7 @@
       font-size: 2rem;
       .iconleft {
         right: 125px;
-        top: 14px;
+        top: 6px;
       }
       .iconright {
         top: -5px;
@@ -107,12 +116,12 @@
       text-align: center;
       font-size: 2rem;
       .iconleft {
-        right: 110px;
-        top: 14px;
+        right: 100px;
+        top: 5px;
       }
       .iconright {
-        top: -5px;
-        left: 110px;
+        top: 0px;
+        left: 100px;
       }
     }
   }
