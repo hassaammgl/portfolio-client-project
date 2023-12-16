@@ -30,3 +30,17 @@
     }
   }
 }
+
+@media screen and (max-width:768px) {
+  .personal{
+    height: fit-content;
+    h1{
+      padding-top: 3rem;
+    }
+    .boxes{
+      gap: 4rem;
+      // margin-bottom: 4rem;
+      @include flexer(column, space-between);
+    }
+  }
+}
