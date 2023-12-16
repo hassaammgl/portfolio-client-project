@@ -22,7 +22,9 @@ function Header() {
     <>
       <div className={style.header}>
         <div className={style.innermenu}>
+          <Link href={"/"}>
           <Image className={style.img} src={img} alt="" />
+          </Link>
           <div>
             <HamburgerIcon toggled={open} toggle={setOpen} />
           </div>
