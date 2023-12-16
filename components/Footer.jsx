@@ -1,14 +1,14 @@
-import React from 'react'
+import React from "react";
 import { FaGithub, FaTelegram, FaLinkedin, FaHeart } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 import style from "@/styles/footer.module.scss";
-import Link from 'next/link';
+import Link from "next/link";
 import { MdAttachEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
     <div className={style.footer}>
-      <h1>CONNET WITH ME</h1>
+      <h1>CONNECT WITH ME</h1>
       <div className={style.links}>
         <Link className={style.social} href={"/"}>
           <span>Github</span>
@@ -32,7 +32,8 @@ const Footer = () => {
         <MdAttachEmail />
       </div>
       <div className={style.mainfooter}>
-        <p>Built From Scratch with
+        <p>
+          Built From Scratch with
           <span>
             <FaHeart className={style.hearticon} />{" "}
           </span>
@@ -40,7 +41,7 @@ const Footer = () => {
         </p>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
