@@ -4,6 +4,8 @@
   width: 100%;
   height: 70vh;
   font-family: font;
+  padding-bottom: 3rem;
+  overflow: hidden;
   h1 {
     color: $lgreen;
     font-size: 4rem;
@@ -42,6 +44,22 @@
       gap: 4rem;
       // margin-bottom: 4rem;
       @include flexer(column, space-between);
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .personal{
+    overflow: hidden;
+    height: fit-content;
+    width: fit-content;
+    h1{
+      font-size: 2.5rem;
+    }
+    .boxes{
+      .box{
+        width: 65%;
+      }
     }
   }
 }
