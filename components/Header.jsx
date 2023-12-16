@@ -26,7 +26,7 @@ function Header() {
           <Image className={style.img} src={img} alt="" />
           </Link>
           <div>
-            <HamburgerIcon toggled={open} toggle={setOpen} />
+            <HamburgerIcon className={style.burger} toggled={open} toggle={setOpen} />
           </div>
         </div>
       </div>

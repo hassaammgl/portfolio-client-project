@@ -18,13 +18,20 @@
     height: 70px;
     width: 70px;
   }
+
+  // .burger{
+  //   &:hover{
+  //     // cursor: url('/public/arrow.png') 15 15,move !important;
+  //     // cursor: url('https://www.onyedika.xyz/static/media/arrowClick.7219a884818048edacbe.svg'), auto;
+  //   }
+  // }
 }
 
 @media screen and (max-width: 425px) {
   .header {
+    width: 100vw;
     .innermenu {
       padding: 1rem;
-      width: 100%;
       display: flex;
       justify-content: space-between;
       align-items: center;
