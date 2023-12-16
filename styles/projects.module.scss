@@ -101,14 +101,14 @@
   }
 
   button {
-    background: $lgreen;
     font-family: $fonts;
     border-radius: 5px;
     padding: 0.8rem 2rem;
     font-size: 1rem;
     font-weight: bold;
-    border: none;
+    color: $lgreen;
     outline: none;
+    border: none;
   }
 }
 

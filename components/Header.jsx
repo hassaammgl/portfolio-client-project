@@ -8,6 +8,7 @@ import img from "@/public/nav.png";
 import { Fade as HamburgerIcon } from "hamburger-react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
+// import file from "@/public/cv-template.pdf";
 import {
   FaGithub,
   FaTelegram,
@@ -59,7 +60,7 @@ const Menu = ({ menuOptions }) => {
             <FaHandPointRight className={style2.activeicon} />
             Projects{" "}
           </Link>
-          <Link href={"/"}>
+          <Link href={""} download={true}>
             <FaHandPointRight className={style2.activeicon} />
             Resume{" "}
           </Link>

@@ -1,0 +1,86 @@
+@import "./utils";
+
+.btn {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: transparent;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-decoration: none;
+  font-size: 24px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  color: black;
+  background: $dgreen;
+  box-shadow: 0 0 10px $lgreen, 0 0 40px $lgreen, 0 0 80px $lgreen,
+    0 0 10px $lgreen;
+  transition-delay: 1s;
+}
+
+.btn span {
+  position: absolute;
+  display: block;
+}
+
+/* ///////////////////////////////////////////////////// */
+.btn span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, $lgreen);
+}
+
+.btn:hover span:nth-child(1) {
+  left: 100%;
+  transition: 1s;
+}
+
+/* ///////////////////////////////////////////////////// */
+.btn span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, $lgreen);
+}
+
+.btn:hover span:nth-child(3) {
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+
+/* ////////////////////////////////////////////////// */
+.btn span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, $lgreen);
+}
+
+.btn:hover span:nth-child(2) {
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+
+/* /////////////////////////////////////////////// */
+.btn span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, $lgreen);
+}
+
+.btn:hover span:nth-child(4) {
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+}

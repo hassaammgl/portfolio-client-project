@@ -10,6 +10,8 @@ import Image from "next/image";
 import Link from "next/link";
 import Footer from "@/components/Footer";
 import BgVideo from "@/components/BgVideo";
+import style2 from "@/styles/visitbtn.module.scss";
+
 let array = [
   {
     img: img1,
@@ -107,7 +109,13 @@ export default function page() {
                     {projects.solution}
                   </p>
                   <Link href={projects.websiteLink}>
-                    <button>Visit</button>
+                    <button className={style2.btn}>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      Visit
+                    </button>
                   </Link>
                 </div>
               </div>

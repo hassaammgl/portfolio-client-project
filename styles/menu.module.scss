@@ -111,6 +111,10 @@
 @media screen and (max-width: 768px) {
   .menu {
     @include flexer(column, flex-start, flex-start);
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
   .links {
     height: fit-content;

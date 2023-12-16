@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "file-loader": "^6.2.0",
     "framer-motion": "^10.16.16",
     "hamburger-react": "^2.5.0",
     "next": "14.0.4",
