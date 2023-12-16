@@ -1,0 +1,32 @@
+@import "./utils";
+
+.personal {
+  width: 100%;
+  height: 70vh;
+  font-family: font;
+  h1 {
+    color: $lgreen;
+    font-size: 4rem;
+    margin-bottom: 4rem;
+  }
+  @include flexer(column);
+  .boxes {
+    @include flexer(row, space-between);
+    width: 80%;
+    .box {
+      padding: 1.5rem;
+      border: 4px solid $lgreen;
+      @include flexer(column);
+      background-color: rgba(0, 0, 0, 0.781);
+      width: 300px;
+      color: rgb(255, 255, 255);
+      box-shadow: 15px 15px $lgreen;
+      h2 {
+        font-size: 3rem;
+      }
+      p {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
