@@ -1,3 +1,4 @@
+import "../styles/important.scss";
 import style from "@/styles/App.module.scss";
 
 export const metadata = {
