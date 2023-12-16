@@ -13,6 +13,7 @@
   .boxes {
     @include flexer(row, space-between);
     width: 80%;
+    gap: 2rem;
     .box {
       padding: 1.5rem;
       border: 4px solid $lgreen;
