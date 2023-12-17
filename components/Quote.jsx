@@ -36,7 +36,7 @@ const Quote = () => {
       className={style.quote}
       initial={{ opacity: 0, scale: 0.8 }}
       animate={controls}
-      transition={{duration: 1.2}}
+      transition={{duration: 1}}
     >
       <div className={style.box}>
         <FaQuoteLeft className={style.iconleft} />
