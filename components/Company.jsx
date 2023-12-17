@@ -29,14 +29,14 @@ const Company = () => {
     controls.start({ x: "100%", opacity: 0 });
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [controls]);
+  },);
 
   return (
     <motion.div
       className={style.company}
       initial={{ x: "100%", opacity: 0 }}
       animate={controls}
-      transition={{duration: .8}}
+      transition={{duration: .6}}
     >
       <div className={style.btn}>
         <h2>Company</h2>

@@ -31,14 +31,14 @@ const Languages = () => {
     controls.start({ rotate: -180, opacity: 0 });
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [controls]);
+  },);
 
   return (
     <motion.div
       className={style.technology}
       initial={{ rotate: -180, opacity: 0 }}
       animate={controls}
-      transition={{duration: .4}}
+      transition={{duration: .3}}
     >
       <h2>TECHNOLOGIES</h2>
       <div className={style.tech}>
