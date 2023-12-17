@@ -28,7 +28,7 @@ const Home = () => {
     controls.start({ x: 0 });
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [controls]);
+  },);
 
   return (
     <motion.div
@@ -36,7 +36,7 @@ const Home = () => {
       initial={{ x: "-100%" }}
       animate={controls}
       exit={{ x: "-100%" }}
-      transition={{duration: .7}}
+      transition={{duration: .5}}
     >
       <div className={style.left}>
         <div className={style.box}>

@@ -29,14 +29,14 @@ const Quote = () => {
     controls.start({ opacity: 0, scale: 0.8 });
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [controls]);
+  },);
 
   return (
     <motion.div
       className={style.quote}
       initial={{ opacity: 0, scale: 0.8 }}
       animate={controls}
-      transition={{duration: 1}}
+      transition={{duration: .8}}
     >
       <div className={style.box}>
         <FaQuoteLeft className={style.iconleft} />

@@ -36,7 +36,7 @@ const Company = () => {
       className={style.company}
       initial={{ x: "100%", opacity: 0 }}
       animate={controls}
-      transition={{duration: .6}}
+      transition={{duration: .5}}
     >
       <div className={style.btn}>
         <h2>Company</h2>
