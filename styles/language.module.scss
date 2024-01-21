@@ -41,14 +41,14 @@
       padding: 0.7rem 1rem;
       gap: 5px;
       border-radius: 10px;
-      width: 7rem;
+      width: 8.8rem;
       font-size: larger;
       @include flexer(row, space-between, center);
 
       .icons {
         color: $lgreen;
         text-align: center;
-        font-size: 2rem;
+        font-size: 28px;
       }
     }
   }
