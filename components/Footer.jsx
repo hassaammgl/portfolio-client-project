@@ -37,7 +37,7 @@ const Footer = () => {
           <span>
             <FaHeart className={style.hearticon} />{" "}
           </span>
-          &copy; Copyright 2023. Monster Programming. All Rights Reserved.
+          &copy; Copyright 2024. Monster Programming. All Rights Reserved.
         </p>
       </div>
     </div>
